@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GNDU Result</title>
+</head>
+<body>
+    <div class="gndu_result">
+        <table border="1" width="65%" height="100px" align="center" cellpadding="10px" cellspacing="0px">
+            <tr>
+                <td colspan="2" align="center">
+                    <img src="https://collegeadmissions.gndu.ac.in/Images/gndu.jpg" alt="GNDU Logo" width="70%" height="100px">
+                </td>
+            </tr>
+
+            <form action="/submit_result" method="post">
+
+                <tr>
+                <td>
+                    <label for="year">Year:</label>
+                    <select id="year" name="year">
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                    </select>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <label for="month">Month:</label>
+                    <select id="month" name="month">
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="9">September</option>
+                        <option value="12">December</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="courseType">Course Type:</label>
+                    <select id="courseType" name="courseType">
+                        <option value="Bcom">BCom</option>
+                        <option value="Bba">BBA</option>
+                        <option value="Bca">BCA</option>
+                        <option value="Bsc">BSc</option>
+                        <option value="Mcom">MCom</option>
+                    </select>
+
+                </td>
+                    
+                <td>
+                    <label for="classSemester">Class Semester:</label>
+                    <select id="classSemester" name="classSemester">
+                        <option value="1st">1st</option>
+                        <option value="2nd">2nd</option>
+                        <option value="3rd">3rd</option>
+                        <option value="4th">4th</option>
+                        <option value="5th">5th</option>
+                        <option value="6th">6th</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="rollNumber">Roll Number:</label>
+                    <input type="text" id="rollNumber" name="rollNumber" required maxlength="11" placeholder="Enter Roll Number">
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <button type="submit">Submit</button>
+
+
+                </td>
+            </tr>
+
+            </form>
+
+            
+        </table>
+
+    </div>
+</body>
+</html>
