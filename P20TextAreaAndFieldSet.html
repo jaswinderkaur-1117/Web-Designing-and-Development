@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Area and Fieldset</title>
+</head>
+<body>
+    <h2>Text Area and Fieldset in HTML</h2>
+    <p>The textarea element is used to create a multi-line text input field, while the fieldset element is used to group related elements in a form.</p>
+
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend><b>Personal Information</b></legend>
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="bio">Bio:</label><br>
+            <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about yourself..."></textarea><br><br>
+
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="3" cols="50" placeholder="Enter your address..."></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
